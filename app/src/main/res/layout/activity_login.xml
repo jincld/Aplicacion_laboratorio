@@ -17,13 +17,14 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="486dp"
-            android:layout_height="557dp"
+            android:layout_width="497dp"
+            android:layout_height="536dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43"
-            app:srcCompat="@drawable/circlegradient"
-            tools:layout_editor_absoluteX="-39dp" />
+            app:layout_constraintVertical_bias="0.497"
+            app:srcCompat="@drawable/circlegradient" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -134,8 +135,12 @@
             android:hint="................"
             android:inputType="text"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="382dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.558" />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -166,7 +171,7 @@
             app:srcCompat="@drawable/baseline_disabled_visible_24" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnSigin"
             android:layout_width="137dp"
             android:layout_height="49dp"
             android:backgroundTint="#7987FA"
