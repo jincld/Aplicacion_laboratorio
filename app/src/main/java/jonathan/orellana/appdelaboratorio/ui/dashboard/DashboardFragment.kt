@@ -1,12 +1,17 @@
 package jonathan.orellana.appdelaboratorio.ui.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import jonathan.orellana.appdelaboratorio.MainActivity
+import jonathan.orellana.appdelaboratorio.R
 import jonathan.orellana.appdelaboratorio.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -17,11 +22,16 @@ class DashboardFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
+
     ): View {
+
+
         val dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
@@ -31,12 +41,17 @@ class DashboardFragment : Fragment() {
         val textView: TextView = binding.textDashboard
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+
         }
         return root
+
     }
 
+
     override fun onDestroyView() {
+
         super.onDestroyView()
         _binding = null
+
     }
 }

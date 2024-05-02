@@ -1,6 +1,8 @@
 package jonathan.orellana.appdelaboratorio
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -32,5 +34,14 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
 }
+/*        //Mandar a llamar a todos los elementos
+        val btnNombre = findViewById<Button>(R.id.btnNombre)
+
+        //Programar al botón
+        btnNombre.setOnClickListener {
+            //Navegar entre pantallas
+            Toast.makeText(this,"Jonathan Orellana",Toast.LENGTH_SHORT).show()
+        }*/
