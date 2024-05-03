@@ -42,6 +42,13 @@ class DashboardFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
 
+            //toast
+
+            val btnNombre = root.findViewById<Button>(R.id.btnNombre)
+            btnNombre.setOnClickListener {
+                Toast.makeText(context,"Jonathan Orellana",Toast.LENGTH_SHORT).show()
+            }
+
         }
         return root
 
